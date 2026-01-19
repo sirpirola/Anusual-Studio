@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusual Studio | Agency Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --helvetica-light: 'Helvetica Neue', Helvetica, 'Inter', Arial, sans-serif;
+            --helvetica-reg: 'Helvetica Neue', Helvetica, 'Inter', Arial, sans-serif;
+        }
+        
+        body { 
+          font-family: var(--helvetica-reg);
+          font-weight: 400;
+          background-color: #171717;
+          color: #ffffff;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, .font-light {
+            font-family: var(--helvetica-light);
+            font-weight: 300;
+        }
+
+        .font-bold, .font-black {
+            font-weight: 700;
+        }
+
+        .bg-main { background-color: #171717; }
+        .text-mint { color: #00FF97; }
+        .bg-mint { background-color: #00FF97; }
+        .border-mint { border-color: rgba(0, 255, 151, 0.3); }
+        
+        .glass-dark {
+          background: rgba(24, 24, 24, 0.8);
+          backdrop-filter: blur(25px);
+          border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        
+        .btn-mint {
+          background-color: #00FF97;
+          color: #171717;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .btn-mint:hover {
+          background-color: #00e688;
+          box-shadow: 0 0 40px rgba(0, 255, 151, 0.3);
+          transform: translateY(-1px);
+        }
+
+        select, input, textarea {
+            font-family: var(--helvetica-reg) !important;
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #171717; }
+        ::-webkit-scrollbar-thumb { background: #333; }
+        ::-webkit-scrollbar-thumb:hover { background: #00FF97; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+</body>
+</html>
